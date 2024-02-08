@@ -1,0 +1,76 @@
+img{
+    max-width: 50%;
+  height: 25%;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pagewrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    width: 75vw;
+    padding: 1em;
+}
+
+.right {
+    width: 25vw;
+    background-color: lightgray;
+    padding: 1em;
+}
+
+.number1 {
+    color: red;
+}
+
+.number2 {
+    color: blue
+}
+
+.number3 {
+    color: blueviolet;
+}
+
+.number4 {
+    color: orange;
+}
+
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    width: 60%;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #df2d2d75;
+    color: #0e0707;
+    padding: 15px 25px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Kalnia', serif;
+}
