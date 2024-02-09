@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let nameOutput = document.getElementById('nameOutput');
         // console.log(eventData);
         nameOutput.innerText = eventData.target.value;
+        date.innerText = eventData.target.value;
     });
 
     document.getElementById('type').addEventListener('change', function (eventData) {
@@ -21,6 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let info = document.getElementById('info');
         info.innerText = eventData.target.value;
         changeCert(eventData.target.value);
+    });
+
+
+    document.getElementById('date').addEventListener('change', function (eventData) {
+        let date = document.getElementById('dateOutput');
+        // console.log(eventData);
+        dateOutput.innerText = eventData.target.value;
     });
 
     // process form Data
@@ -32,8 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //update certificate information when form is submitted:
         let nameOutput = document.getElementById('nameOutput');
+        let date = document.getElementById('date');
         let info = document.getElementById('info');
         nameOutput.innerText = formData.name;
+        date.innerText = formData.name;
         info.innerText = formData.type;
 
       });
@@ -65,6 +75,22 @@ document.addEventListener("DOMContentLoaded", function () {
             break;
         }
     }
+
+    // Adding a button to print the certificate
+    // setup print event listener
+    if ( document.getElementById('print') !== null) {
+        let printElement = document.getElementById('print');
+        printElement.addEventListener('click', function(e){
+        window.print();
+        console.log("invoke print");
+        } );
+    } // or in html -> onclick="window.print()"
+
+    // Generating a date
+    let theDate = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"numeric", day:"numeric"}) 
+    // Makes a format like: "Friday, Jul 2, 2021"
+    let dateBox = document.getElementById('theDate');
+    dateBox.innerText = theDate;
 });
 
 /* Additional things to be aware of */

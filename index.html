@@ -13,29 +13,34 @@
 
 <div class="pagewrapper">
 
-    <section class="left">
+    <section class="section1">
 
 
- <div class="image-container">
+ <div class="container">
         <img src="dfdfd.jpg" alt="">
-        <div class = "overlay-text">
         <div class="certificate " id="certificate">
             <span id="nameOutput" class="visible">Test Name</span>
-            <span id="info">Test Info</span>
+            <span id="info" class="info">Test Info</span>
+            <span id="dateOutput" class="date">Date</span>
+            <span id="signature" class="signature">signature</span>
+
         </div>
 
     </section>
 
-    <section class="right">
+    <section class="section2">
 
         <form action="" id="myForm">
 
+            <input type="text" name="date" id="date" placeholder="Date">
+
             <input type="text" name="name" id="name" placeholder="Name">
     
+
             <select name="type" id="type">
-                <option value="A">FOR HAVING THE BIGGEST TEETH </option>
-                <option value="B">FOR HAVING THE LONGEST NUMBERS OF CSS AND JAVASCRIPT.</option>
-                <option value="C">FOR WRITING 1000 WORDS IN AN HOUR</option>
+                <option value="FOR HAVING THE BIGGEST TEETH">FOR HAVING THE BIGGEST TEETH </option>
+                <option value="FOR HAVING THE LONGEST NUMBERS OF CSS AND JAVASCRIPT">FOR HAVING THE LONGEST NUMBERS OF CSS AND JAVASCRIPT</option>
+                <option value="FOR WRITING 1000 WORDS IN AN HOUR">FOR WRITING 1000 WORDS IN AN HOUR</option>
             </select>
             <input type="submit" value="Generate">
             <input type ="button" Value="print" id="print">

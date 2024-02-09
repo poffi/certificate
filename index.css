@@ -1,6 +1,6 @@
 img{
-    max-width: 50%;
-  height: 25%;
+    width:100%;
+  height: 100%;
 }
 
 body {
@@ -16,61 +16,72 @@ body {
     height: 100vh;
 }
 
-.left{
-    width: 75vw;
-    padding: 1em;
+.section2 {
+    
+
 }
 
-.right {
-    width: 25vw;
-    background-color: lightgray;
-    padding: 1em;
-}
-
-.number1 {
-    color: red;
-}
-
-.number2 {
-    color: blue
-}
-
-.number3 {
-    color: blueviolet;
-}
-
-.number4 {
-    color: orange;
-}
-
-
-
-
-.image-container {
+.container {
     position: relative;
-    display: inline-block;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    width: 60%;
-}
-
-.image-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #df2d2d75;
-    color: #0e0707;
-    padding: 15px 25px;
-    font-size: 50px;
     text-align: center;
-    font-family: 'Kalnia', serif;
+    font-family: "Satisfy", cursive;
+    color: rgb(232, 198, 7) ;
+  }
+.date{
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    font-size: 40px;
+}
+.signature{
+    position: absolute;
+    bottom: 100px;
+    right: 250px;
+  font-size: 40px;
+}
+.visible{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+.info{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+
+@media print {
+    .section2{
+        display: none;
+    }
+    .date{
+        position: absolute;
+        bottom: 80px;
+        left: 100px;
+        font-size: 25px;
+    }
+    .signature{
+        position: absolute;
+        bottom: 80px;
+        right: 220px;
+      font-size: 25px;
+    }
+    .visible{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        font-size: 25px;
+      transform: translate(-50%, -50%);
+    }
+    .info{
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        font-size: 25px;
+      transform: translate(-50%, -50%);
+    }
 }
